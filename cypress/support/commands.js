@@ -23,3 +23,31 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('createTask', (taskName) => {
+  cy.visit('http://localhost:3000')
+
+  cy.get('input[placeholder="Add a new Task"]').type(taskName)
+
+  cy.contains('button', 'Create').click()
+})
+
+Cypress.Commands.add('deleteTaskByName', (taskName) => {
+  cy.request({
+    url: 'http://localhost:3333/helper/tasks',
+    method: 'DELETE',
+    body: { name: taskName }
+  }).then(response => {
+    expect(response.status).to.eq(204)
+  })
+})
+
+Cypress.Commands.add('postCreateTask', (objTask) => {
+  cy.request({
+    url: 'http://localhost:3333/tasks',
+    method: 'POST',
+    body: objTask
+  }).then(response => {
+    expect(response.status).to.eq(201)
+  })
+})

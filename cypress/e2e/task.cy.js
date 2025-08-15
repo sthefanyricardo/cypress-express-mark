@@ -4,19 +4,9 @@ describe('tarefas', ()=> {
     
     const taskName = 'Ler um livro de node.js'
 
-    cy.request({
-      url: 'http://localhost:3333/helper/tasks',
-      method: 'DELETE',
-      body: {name: taskName}
-    }).then(response => {
-        expect(response.status).to.eq(204)
-    })
+    cy.deleteTaskByName(taskName)
 
-    cy.visit('http://localhost:3000')
-
-    cy.get('input[placeholder="Add a new Task"]').type(taskName)
-
-    cy.contains('button', 'Create').click()
+    cy.createTask(taskName)
     
     cy.contains('main div p', taskName).should('be.visible')
   
@@ -29,27 +19,11 @@ describe('tarefas', ()=> {
       is_done: false
     }
 
-    cy.request({
-      url: 'http://localhost:3333/helper/tasks',
-      method: 'DELETE',
-      body: { name: task.name }
-    }).then(response => {
-        expect(response.status).to.eq(204)
-    })
+    cy.deleteTaskByName(task.name)
 
-    cy.request({
-      url: 'http://localhost:3333/tasks',
-      method: 'POST',
-      body: task
-    }).then(response => {
-        expect(response.status).to.eq(201)
-    })
+    cy.postCreateTask(task)
 
-    cy.visit('http://localhost:3000')
-
-    cy.get('input[placeholder="Add a new Task"]').type(task.name)
-
-    cy.contains('button', 'Create').click()
+    cy.createTask(task.name)
     
     cy.get('.swal2-html-container').should('be.visible').should('have.text', 'Task already exists!')
 
