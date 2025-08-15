@@ -1,3 +1,5 @@
+/// <reference types="cypress" />
+
 describe('tarefas', ()=> {
   
   context('Cadastro', ()=> {
@@ -25,6 +27,29 @@ describe('tarefas', ()=> {
     it('campo obrigatório', () => {
       cy.createTask()
       cy.isRequiredField('This is a required field')
+    });
+  })
+
+  context('Atualização', ()=> {
+    it('deve concluir uma tarefa', () => {      
+      const task = {
+        name: 'Pagar contas de consumo',
+        is_done: false
+      }
+
+      cy.deleteTaskByName(task.name)
+      cy.postCreateTask(task)
+
+      cy.visit('http://localhost:3000')
+      
+      cy.contains('p', task.name)
+          .parent()
+          .find('button[class*=ItemToggle]')
+          .click()
+      
+      cy.contains('p', task.name)
+          .should('have.css', 'text-decoration-line', 'line-through')
+
     });
   })
 
