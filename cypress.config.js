@@ -1,3 +1,6 @@
+const allureWriter = require('@shelex/cypress-allure-plugin/writer');
+// import allureWriter from "@shelex/cypress-allure-plugin/writer";
+
 module.exports = {
   e2e: {
     baseUrl: 'http://localhost:3000',
@@ -8,6 +11,8 @@ module.exports = {
     viewportHeight: 1080,
     setupNodeEvents(on, config) {
       // implement node event listeners here
+      allureWriter(on, config);
+      return config;
     },
   },
 };

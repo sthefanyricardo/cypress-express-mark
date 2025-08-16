@@ -2,6 +2,9 @@
   "name": "cypress-express-mark",
   "packageManager": "yarn@4.6.0",
   "devDependencies": {
-    "cypress": "^14.5.4"
+    "@shelex/cypress-allure-plugin": "^2.41.2",
+    "allure-commandline": "^2.34.1",
+    "cypress": "^14.5.4",
+    "http-server": "^14.1.1"
   }
 }
