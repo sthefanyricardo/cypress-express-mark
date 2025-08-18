@@ -64,13 +64,13 @@ O repositório está organizado em pastas, cada uma correspondente a um nível d
 ## 🛠️ Tecnologias, Ferramentas e Requisitos
 Este projeto foi desenvolvido com as seguintes ferramentas e tecnologias. Certifique-se de que sua máquina atende aos requisitos abaixo para executar os testes.
 
-### 🔹 Linguagem e Frameworks
+### Linguagem e Frameworks
 - [**JavaScript**](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) → Linguagem utilizada para implementação dos testes.  
 - [**Cypress**](https://www.cypress.io/) → Framework de automação de testes end-to-end para aplicações web.  
 - [**Node.js**](https://nodejs.org/) + [**npm**](https://www.npmjs.com/) / [**Yarn**](https://yarnpkg.com/) → Ambiente de execução e gerenciamento de dependências.  
 - [**Java**](https://www.java.com/pt-BR/) → Necessário para geração de relatórios com o [cypress-allure-plugin](https://github.com/Shelex/cypress-allure-plugin).  
 
-### 🔹 Ferramentas de Desenvolvimento
+### Ferramentas de Desenvolvimento
 - [**Visual Studio Code**](https://code.visualstudio.com/download) → IDE utilizada para desenvolvimento e manutenção dos testes.  
 - [**Git**](https://git-scm.com/downloads) → Controle de versão.  
 - [**GitHub**](https://github.com) → Repositório remoto para versionamento e compartilhamento do código.  
