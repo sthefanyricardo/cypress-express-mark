@@ -79,10 +79,16 @@ Este projeto foi desenvolvido com as seguintes ferramentas e tecnologias. Certif
 
 ---
 
-### ▶️ Execução dos Testes
-Para instruções detalhadas de execução, consulte o arquivo [EXECUTION.md](./EXECUTION.md).
+### ⚙️ Configuração do Ambiente
+Para instruções detalhadas de instalação e execução da aplicação **Mark L.**, consulte o arquivo [Detalhes aplicação Mark L.](./apps/README.md).
 
 ---
+
+### ▶️ Execução dos Testes
+Para instruções detalhadas de execução dos testes automatizados, consulte [Detalhes execução do projeto](./EXECUTION_INSTRUCTION.md).
+
+---
+
 
 ## 📌 Agradecimentos
 
