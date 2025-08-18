@@ -51,7 +51,7 @@ O repositório está organizado em pastas, cada uma correspondente a um nível d
 📦 cypress-express-mark
  ┣ 📂 apps                  # Arquivos de instalação da aplicação Mark L. alvo dos testes
  ┣ 📂 cypress               # Testes automatizados
- ┣ 📂 insomnia_collection   # Coleção de requisições da aplicação Mark L.
+ ┣ 📂 insomnia_collection   # Coleção de requisições da API Mark L.
  ┣ 📂 results               # Evidências e relatórios (Allure)
  ┣ 📜 cypress.config.js     # Configuração do Cypress
  ┣ 📜 package.json          # Dependências do projeto
@@ -67,8 +67,8 @@ Este projeto foi desenvolvido com as seguintes ferramentas e tecnologias. Certif
 ### Linguagem e Frameworks
 - [**JavaScript**](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) → Linguagem utilizada para implementação dos testes.  
 - [**Cypress**](https://www.cypress.io/) → Framework de automação de testes end-to-end para aplicações web.  
-- [**Node.js**](https://nodejs.org/) + [**npm**](https://www.npmjs.com/) / [**Yarn**](https://yarnpkg.com/) → Ambiente de execução e gerenciamento de dependências.  
-- [**Java**](https://www.java.com/pt-BR/) → Necessário para geração de relatórios com o [cypress-allure-plugin](https://github.com/Shelex/cypress-allure-plugin).  
+- [**Node.js**](https://nodejs.org/en/download) + **npm**/**Yarn** → Ambiente de execução e gerenciamento de dependências.  
+- [**Java**](https://www.java.com/en/) → Necessário para geração de relatórios com o [cypress-allure-plugin](https://github.com/Shelex/cypress-allure-plugin).  
 
 ### Ferramentas de Desenvolvimento
 - [**Visual Studio Code**](https://code.visualstudio.com/download) → IDE utilizada para desenvolvimento e manutenção dos testes.  
@@ -88,7 +88,6 @@ Para instruções detalhadas de instalação e execução da aplicação **Mark 
 Para instruções detalhadas de execução dos testes automatizados, consulte [Detalhes execução do projeto](./EXECUTION_INSTRUCTION.md).
 
 ---
-
 
 ## 📌 Agradecimentos
 
