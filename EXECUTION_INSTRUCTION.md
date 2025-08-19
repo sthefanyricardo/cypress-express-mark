@@ -151,7 +151,6 @@ Abra o terminal na pasta principal do projeto:
 ## 4️⃣ Relatórios de Teste com Allure Plugin
 Após a execução dos testes com o Allure habilitado (`yarn cypress run --env allure=true`), os resultados ficam armazenados na pasta: ./results/allure-report.
 
-
 1. **Gerar o relatório Allure:**
 ```bash
   allure generate results --clean -o allure-report
