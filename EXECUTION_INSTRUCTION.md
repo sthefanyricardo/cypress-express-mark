@@ -8,10 +8,12 @@ A aplicação alvo Mark L. roda em ambiente local e é necessária para execuç�
 ---
 
 ## 📌 Visão Geral
-1. Instalação dos pré-requisitos
-2. Instalação do projeto
-3. Execução dos testes (modo interativo e headless)
-4. Geração de relatórios com Allure
+Este guia aborda:
+
+1. Instalação dos pré-requisitos.
+2. Instalação das dependências do projeto.
+3. Execução dos testes (modos interativo e headless).
+4. Relatórios de Teste com o Cypress Allure Plugin.
 
 ---
 
@@ -72,11 +74,11 @@ As ferramentas de terminal, também conhecidas como linha de comando (command-li
 
 ---
 
-## 2️⃣ Instalação do Projeto
-Com os pré-requisitos instalados, siga estes passos para configurar o projeto:
+## 2️⃣ Instalação das dependências do projeto
+Com os pré-requisitos instalados, siga estes passos para instalar as dependências do projeto:
 
 1. **Abra a sua ferramenta de linha de comando (CLI) e siga os passos a seguir:**
-    - **Clonar o repositório:**
+    - **Clonar o repositório via "HTTPS":**
     ```bash
     git clone https://github.com/sthefanyricardo/cypress-express-mark.git
     ```
@@ -93,22 +95,47 @@ Com os pré-requisitos instalados, siga estes passos para configurar o projeto:
 
 ---
 
-## 3️⃣ Executando os Testes
-1. Abrir o Cypress no modo interativo (GUI)
-```bash
-yarn cypress open
-```
-2. Executar todos os testes no modo headless
-``` bash
-yarn cypress run
-```
-3. Executar testes com relatório Allure
-```bash
-yarn cypress run --env allure=true
-```
+## 3️⃣ Execução dos testes (modos interativo e headless)
+Abra a sua ferramenta de linha de comando (CLI) na pasta principal do projeto: ```.../cypress-express-mark´``` e, siga os passos a seguir:
+
+1. **Executar os testes automatizados no Cypress modo interativo (GUI)**
+    - Informar o comando abaixo para abrir a interface gráfica do Cypress
+      ```bash
+      yarn cypress open
+      ```
+    - Na interface gráfica do Cypress:
+      - clicar em "Continue"
+      - Em "Welcome to Cypress!", clicar em "E2E Testing"
+      - Em "Choose a browser", escolher algum navegador (o "Electron" é o navegador padrão do Cypress)
+      - Clicar em "Start E2E Testing in *{navegador escolhido}*"
+      - Em "cypress-express-mark" > "Specs"> "E2E specs" > "cypress\e2e"
+        - clicar em "home", para executar esta suite de testes
+        - clicar em "tasks", para executar esta suite de testes
+
+2. **Executar os testes automatizados no Cypress modo headless (CLI)**
+    - Executar todos os testes no modo headless
+    ``` bash
+      yarn cypress run
+    ```
+  > ℹ️ **Informações:** Este comando executa todos os arquivos de testes da pasta ```.../cypress-express-mark/cypress/e2e``` no modo headless
+    - Executar todos os testes no modo headless, escolhendo o navegador da execução
+    ``` bash
+    yarn cypress run --browser chrome
+    ```
+  > ℹ️ **Informações:** Nessas execuções os resultados da execução são aparentados na propria ferramente de CLI utilizada.
+  
+  - Para gerar os videos da execução em modo headless precisamos especificar no cypress para habilitar essa opção, porque atualmente ela vem como desabilitada por padrão na ferramenta, a seguir como fazer isso:
+    - No arquivo: cypress.config.js, incluir a opção: video: true, na função: module.exports, como explica a documantação: [Screenshots and Videos](https://docs.cypress.io/app/guides/screenshots-and-videos), após especificar sua escolha no arquivo ```cypress.config.js``` os videos serão gerados nas execuções em modo headless.
+
+3. **Executar os testes automatizados no Cypress modo headless (CLI) com a geração de relatório pelo [Cypress Allure Plugin](https://github.com/Shelex/cypress-allure-plugin)**
+    - Executar testes com relatório Allure
+    ```bash
+    yarn cypress run --env allure=true
+    ```
+
 ---
 
-## 4️⃣ Relatórios de Teste (Allure)
+## 4️⃣ Relatórios de Teste com o Cypress Allure Plugin
 Após a execução dos testes, os resultados ficam armazenados na pasta ./results/allure-report.
 
 Gerar e abrir relatório do Allure:
