@@ -114,6 +114,7 @@ Abra o terminal na pasta principal do projeto:
       5. Acesse: cypress-express-mark > Specs > E2E specs > cypress/e2e
         - Clique em home para executar a suíte de testes home
         - Clique em tasks para executar a suíte de testes tasks
+    > ℹ️ Qualquer edição e salvamento no arquivos executa automaticamente a suíte selecionada na interface gráfica do Cypress.
 
 2. **Modo Headless (CLI)**
     - Executar todos os testes:
@@ -137,7 +138,7 @@ Abra o terminal na pasta principal do projeto:
         },
       };
     ```
-    Após isso, os [vídeos serão gravados automaticamente ](https://docs.cypress.io/app/guides/screenshots-and-videos) nas execuções em modo headless.
+    > ℹ️ Após isso, os [vídeos serão gravados automaticamente ](https://docs.cypress.io/app/guides/screenshots-and-videos) na pasta padrão do Cypress, nas execuções em modo headless.
 
 
 3. **Modo Headless com Relatório Allure Report**
