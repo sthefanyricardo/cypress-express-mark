@@ -14,6 +14,7 @@ Este guia aborda:
 2. Instalação das dependências do projeto.
 3. Execução dos testes (modos interativo e headless).
 4. Relatórios de Teste com Allure Plugin.
+5. Solução de Problemas Comuns
 
 ---
 
@@ -153,28 +154,40 @@ Abra o terminal na pasta principal do projeto:
 Após a execução dos testes com o Allure habilitado (`yarn cypress run --env allure=true`), os resultados ficam armazenados na pasta: ./results/allure-results.
 
 1. **Gerar e abrir o relatório Allure:**
-    - **Gerar o relatório Allure:**
-    ```bash
-      allure generate ./results/allure-results --clean -o ./results/allure-report
-    ```
+```bash
+  # Gerar relatório
+  allure generate ./results/allure-results --clean -o ./results/allure-report
 
-    - **Abrir o relatório no navegador:**
-    ```bash
-      allure open ./results/allure-report
-    ```
-2. Gerar e abrir com um único comando
+  # Abrir relatório no navegador
+  allure open ./results/allure-report
+
+  #ou
+
+  yarn http-server ./results/allure-report
+```
+
+2. **Gerar e abrir com um único comando**
 ```bash
   yarn allure serve ./results/allure-results
 ```
-**ou**
-```bash
-  yarn http-server ./results/allure-report
-```
+
 
 ℹ️ O relatório é interativo e exibe:
   - ✅ Status dos testes (pass/fail)
   - 📸 Screenshots
   - 🎥 Vídeos das execuções
+
+---
+
+## 6️⃣ Solução de Problemas Comuns
+
+| Problema                       | Solução                                                               |
+| ------------------------------ | --------------------------------------------------------------------- |
+| `yarn: command not found`      | Execute `corepack enable` sua ferramenta de de linha de comando (CLI) |
+| Testes não iniciam no Electron | Tente outro navegador: `yarn cypress run --browser chrome`            |
+| Erro no Allure Plugin          | Verifique se o Java está corretamente instalado e configurado no PATH |
+| Vídeos não gerados             | Confirme se `video: true` está habilitado no `cypress.config.js`      |
+
 
 ---
 
