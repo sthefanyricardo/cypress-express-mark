@@ -17,7 +17,7 @@ Este guia aborda:
 ---
 
 ## 1️⃣ Pré-requisitos (Configuração do Ambiente)
-Para iniciar a aplicação localmente, certifique-se de que você já tem os pré-requisitos instalados, conforme o guia do [Instruções instalação do projeto](./EXECUTION_INSTRUCTION.md), e siga os passos abaixo.
+Para iniciar a aplicação localmente, certifique-se de que você já tem os pré-requisitos instalados e que já tenha feito a instalação das dependências do projeto, conforme o guia do [Instruções instalação do projeto](./EXECUTION_INSTRUCTION.md), e somente depois siga os passos abaixo.
 
 ---
 
@@ -42,7 +42,7 @@ Com os pré-requisitos instalados, abra a sua ferramenta de linha de comando (CL
       ```
 
 3.  **Atualize o better-sqlite3:**
-Antes de instalar as dependencias da aplicação, atualizar o better-sqlite3:
+⚠️ Importante: Atualize o `better-sqlite3` ANTES de rodar `npm install` nas pastas `api` e `web`.
  - Na pasta "cypress-express-mark/apps", atualize o better-sqlite3 com o comando abaixo:
     ```bash
       npm install better-sqlite3@latest
@@ -110,7 +110,7 @@ Abra um SEGUNDO terminal, acesse a pasta `web` e rode a aplicação web:
 | Problema                                                                 | Solução                                                                                               |
 | ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------- |
 | ❌ Erro ao instalar dependências (`better-sqlite3` falha na instalação). | Certifique-se de ter atualizado o pacote com `npm install better-sqlite3@latest` antes de rodar `npm install`. |
-| ❌ Testes falham porque não encontram endpoints da API/Web.   | Verifique se **API** (`npm run api`) e **Web** (`npm run web`) estão rodando antes de iniciar os testes. |
+| ❌ Testes falham porque não encontram endpoints da API/Web.   | Verifique se **API** (`cd api && npm run dev`) e **Web** (`cd web && npm run dev`) estão rodando antes de iniciar os testes. |
 | ❌ O front-end abre, mas não carrega dados.                              | Verifique se a **API** está rodando em `http://localhost:3333`. A aplicação Web depende da API estar ativa. |
 
 ---
