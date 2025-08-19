@@ -164,11 +164,11 @@ Após a execução dos testes com o Allure habilitado (`yarn cypress run --env a
     ```
 2. Gerar e abrir com um único comando
 ```bash
-  allure serve ./results/allure-results
+  yarn allure serve ./results/allure-results
 ```
 **ou**
 ```bash
-  yarn allure serve ./results/allure-results
+  yarn http-server ./results/allure-report
 ```
 
 ℹ️ O relatório é interativo e exibe:
