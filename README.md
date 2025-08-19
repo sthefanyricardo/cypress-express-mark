@@ -75,8 +75,6 @@ Este projeto foi desenvolvido com as seguintes ferramentas e tecnologias. Certif
 - [**Git**](https://git-scm.com/downloads) → Controle de versão.  
 - [**GitHub**](https://github.com) → Repositório remoto para versionamento e compartilhamento do código.  
 
-❗ **Obs.: No curso o instrutor indicou utilizar uma versão específica para a instalação do Node.js e do Cypress, porém eu utilizei a versão** **mais recente de ambos (Node.js (npm e yarn), Cypress e Java) e funcionou tudo corretamente!**
-
 ---
 
 ### ⚙️ Configuração do Ambiente
