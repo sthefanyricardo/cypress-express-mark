@@ -130,7 +130,7 @@ Abra o terminal na pasta principal do projeto:
 
   - Gerar vídeos da execução:
     No arquivo cypress.config.js, adicione a opção:
-    ``` bash
+    ``` javascript
       module.exports = {
         e2e: {
           video: true
