@@ -48,15 +48,36 @@ Os testes automatizados neste projeto cobrem as seguintes funcionalidades da apl
 O repositório está organizado em pastas, cada uma correspondente a um nível de complexidade:
 
 ```
-📦 cypress-express-mark
- ┣ 📂 apps                  # Arquivos de instalação da aplicação Mark L. alvo dos testes
- ┣ 📂 cypress               # Testes automatizados
- ┣ 📂 insomnia_collection   # Coleção de requisições da API Mark L.
- ┣ 📂 results               # Evidências e relatórios (Allure)
- ┣ 📜 cypress.config.js     # Configuração do Cypress
- ┣ 📜 package.json          # Dependências do projeto
- ┣ 📜 tsconfig.json         # Configurações TypeScript
- ┗ 📜 README.md             # Documentação geral do projeto
+📦 cypress-express-mark/
+ ┣ 📂 apps/                        # Aplicação de demonstração Mark L. (alvo dos testes)
+ ┃ ┣ 📂 api/                       # Back-end da aplicação (API)
+ ┃ ┣ 📂 web/                       # Front-end da aplicação
+ ┃ ┣ 📜 mark-dev-build-r3.zip      # Build compactado da aplicação
+ ┃ ┗ 📜 README.md                  # Guia de instalação/execução da aplicação Mark L.
+ ┣ 📂 cypress/                     # Diretório principal dos testes automatizados (Cypress)
+ ┃ ┣ 📂 downloads/                 # Arquivos baixados durante os testes
+ ┃ ┣ 📂 e2e/                       # Casos de teste E2E (ponta a ponta)
+ ┃ ┣ 📂 fixtures/                  # Massa de dados para os testes
+ ┃ ┣ 📂 screenshots/               # Evidências de falhas (prints automáticos)
+ ┃ ┣ 📂 support/                   # Comandos customizados, configurações e hooks
+ ┃ ┗ 📂 videos/                    # Gravações das execuções dos testes
+ ┣ 📂 insomnia_collection/         # Coleção de requisições para testes manuais da API
+ ┃ ┣ 📂 imgs/                      # Imagens auxiliares da coleção (se houver)
+ ┃ ┣ 📜 Insomnia_markL.json        # Arquivo da coleção (para importar no Insomnia)
+ ┃ ┗ 📜 README.md                  # Guia de uso da coleção do Insomnia
+ ┣ 📂 results/                     # Relatórios e evidências de execução
+ ┃ ┣ 📂 allure-report/             # Relatório HTML interativo gerado pelo Allure
+ ┃ ┗ 📂 allure-results/            # Resultados brutos da execução (JSON/XML)
+ ┣ 📜 .editorconfig                # Padrões de formatação de código
+ ┣ 📜 .gitattributes               # Configurações específicas para o Git
+ ┣ 📜 .gitignore                   # Arquivos/pastas ignorados pelo Git
+ ┣ 📜 cypress.config.js            # Configurações globais do Cypress
+ ┣ 📜 EXECUTION_INSTRUCTION.md     # Guia de instalação e execução do projeto
+ ┣ 📜 package.json                 # Dependências e scripts do projeto
+ ┣ 📜 README.md                    # Documentação principal do repositório
+ ┣ 📜 jsconfig.json                # Configurações TypeScript/JavaScript
+ ┗ 📜 yarn.lock                    # Controle de versões exatas das dependências
+
 ```
 
 ---
