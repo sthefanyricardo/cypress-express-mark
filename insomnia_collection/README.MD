@@ -8,6 +8,8 @@ A coleção permite **testar manualmente os endpoints**, verificar requests e re
 ## 📂 Conteúdo
 - `markl_api.json` - coleção de endpoints da aplicação Mark L.
 
+--- 
+
 ## 📌 Endpoints da coleção
 
 | Método | Endpoint    | Descrição                  | Exemplo de Request Body                          |
