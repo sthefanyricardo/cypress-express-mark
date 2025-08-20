@@ -21,7 +21,7 @@ A coleção permite **testar manualmente os endpoints**, verificar requests e re
 
 ## ⚙️ Como importar a coleção
 ### Insomnia
-  - Turorial
+  - Turorial  
     [Masterizando o Insomnia | Masterclass #05](https://www.youtube.com/watch?v=3tB0uDliS6Y)
 
 ### Postman
