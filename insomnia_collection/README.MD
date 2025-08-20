@@ -21,7 +21,8 @@ A coleção permite **testar manualmente os endpoints**, verificar requests e re
 
 ## ⚙️ Como importar a coleção
 ### Insomnia
-![Exemplo importação da coleção no Insomnia - GIF demonstrativo](./imgs/exemplo_insomnia_importacao.gif)
+  - Turorial
+    [Masterizando o Insomnia | Masterclass #05](https://www.youtube.com/watch?v=3tB0uDliS6Y)
 
 ### Postman
 ![Exemplo importação da coleção no Postman - GIF demonstrativo](./imgs/exemplo_postman_importacao.gif)
