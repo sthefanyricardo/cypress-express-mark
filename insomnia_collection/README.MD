@@ -37,6 +37,8 @@ A coleção permite **testar manualmente os endpoints**, verificar requests e re
 - Recomenda-se  [iniciar a aplicação Mark L.](./apps/README.md), localmente antes de testar os endpoints.
 - Para mais informações sobre o projeto e os testes automatizados, consulte o [README principal](../README.md), ou acesso o repositório principal do projeto: [Cypress eXpress](https://github.com/sthefanyricardo/cypress-express-mark).
 
+---
+
 ## 🙋‍♀️ Autora
 Feito com ❤️ por **Sthefany A. Ricardo**.  
 📅 Última atualização: **Agosto de 2025**.
