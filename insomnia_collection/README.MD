@@ -8,6 +8,8 @@ A coleção permite **testar manualmente os endpoints**, verificar requests e re
 ## 📂 Conteúdo
 - `markl_api.json` - coleção de endpoints da aplicação Mark L.
 
+--- 
+
 ## 📌 Endpoints da coleção
 
 | Método | Endpoint    | Descrição                  | Exemplo de Request Body                          |
@@ -21,7 +23,8 @@ A coleção permite **testar manualmente os endpoints**, verificar requests e re
 
 ## ⚙️ Como importar a coleção
 ### Insomnia
-![Exemplo importação da coleção no Insomnia - GIF demonstrativo](./imgs/exemplo_insomnia_importacao.gif)
+  - Tutorial  
+    [Masterizando o Insomnia | Masterclass #05](https://www.youtube.com/watch?v=3tB0uDliS6Y)
 
 ### Postman
 ![Exemplo importação da coleção no Postman - GIF demonstrativo](./imgs/exemplo_postman_importacao.gif)
@@ -33,6 +36,8 @@ A coleção permite **testar manualmente os endpoints**, verificar requests e re
 - As coleções são úteis para testes manuais ou como referência durante a automação de testes.
 - Recomenda-se  [iniciar a aplicação Mark L.](./apps/README.md), localmente antes de testar os endpoints.
 - Para mais informações sobre o projeto e os testes automatizados, consulte o [README principal](../README.md), ou acesso o repositório principal do projeto: [Cypress eXpress](https://github.com/sthefanyricardo/cypress-express-mark).
+
+---
 
 ## 🙋‍♀️ Autora
 Feito com ❤️ por **Sthefany A. Ricardo**.  
